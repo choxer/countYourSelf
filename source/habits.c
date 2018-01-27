@@ -8,8 +8,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void showCigarrettes(){
+void showCigarettes(){
+    printf("|| Du hast heute %f Kippen geraucht...\n");
+    printf("|| Du hast diesen Monat %f Kippen geraucht...\n");
+}
 
+void showBeer(){
+    printf("|| Du hast heute %f Bier getrunken...\n");
+    printf("|| Du hast diesen Monat %f Bier getrunken...\n");
+}
+
+void showHighPercent(){
+    // printf("|| Du hast heute %i Kippen geraucht...\n");
+    // printf("|| Du hast diesen Monat %i Kippen geraucht...\n");
+}
+
+void showSports(){
+    if(1){
+    printf("|| Du hast heute noch keinen Sport gemacht!");
+    }
+    else{
+    printf("|| Du hast heute %f Minuten Sport gemacht!");
+    }
+    // diese woche
+    // disesn monat
 }
 
 void addHabit(int asses, char *name, tDate *currentDate){
@@ -46,16 +68,16 @@ void showAllHabits(){
 
     switch (choiceHabit){
         case 0:
-            // showCigarettes();
+            showCigarettes();
             break;
         case 1:
-            // showBeer();
+            showBeer();
             break;
         case 2:
-            // showHighPercent();
+            showHighPercent();
             break;
         case 3:
-            // showSports();
+            showSports();
             break;
     }
 }
