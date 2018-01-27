@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/countYourSelf.dir/source/habits.c.o CMakeFiles/countYourSelf.dir/source/mainMenue.c.o CMakeFiles/countYourSelf.dir/source/showCurrent.c.o CMakeFiles/countYourSelf.dir/main.c.o  -o countYourSelf 

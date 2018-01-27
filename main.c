@@ -1,16 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-<<<<<<< HEAD
-#include "../header/mainMenue.h"
-#include "../header/habits.h"
-=======
-#include "mainMenue.h"
->>>>>>> 586430e04df3f1aa6707630ac232c86f0959d778
+
+#include "header/habits.h"
+#include "header/mainMenue.h"
 
 int main() {
 
     int choiceMain = 0;
-<<<<<<< HEAD
+
     printMainMenue();
 
     switch (choiceMain){
@@ -25,32 +22,8 @@ int main() {
             break;
         case 3:
             // showCurrentMonth();
-=======
-    choiceMain = printMainMenue();
 
-    switch (choiceMain){
-        case 0:
-            showAllCategorie();
-            break;
-        case 1:
-            break;
-        case 2:
-            break;
-        case 3:
->>>>>>> 586430e04df3f1aa6707630ac232c86f0959d778
-            break;
-        case 4:
-            break;
-        case 5:
-            break;
-        case 6:
-            break;
-        case 7:
-            break;
-        case 8:
-            break;
-        case 9:
-            break;
+    choiceMain = printMainMenue();
 
     }
     return 0;

@@ -1,0 +1,3 @@
+/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles/countYourSelf.dir

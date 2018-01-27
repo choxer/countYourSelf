@@ -1,6 +1,14 @@
 cmake_minimum_required(VERSION 3.9)
-project(untitled1 C)
+project(countYourSelf)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 11)
 
-add_executable(counted source/main.c source/mainMenue.c header/mainMenue.h source/habits.c header/habits.h header/datastructures.h source/showCurrent.c header/showCurrent.h)
+add_executable(countYourSelf
+        header/datastructures.h
+        header/habits.h
+        header/mainMenue.h
+        header/showCurrent.h
+        source/habits.c
+        source/mainMenue.c
+        source/showCurrent.c
+        main.c)
