@@ -59,15 +59,16 @@ void addHabitToDate(tDate *currentDate, tHabit habit, int habitIndex){
 void showAllHabits(){
     int choiceHabit  = 0;
 
-    char *habitMenueTitel[4];
-        habitMenueTitel[0]  = "ciggarretes";
+    char *habitMenueTitel[5];
+        habitMenueTitel[0]  = "cigarretes";
         habitMenueTitel[1]  = "beer";
-        habitMenueTitel[2]  = "high%";
-        habitMenueTitel[3]  = "sports";
+        habitMenueTitel[2]  = "high %";
+        habitMenueTitel[3]  = "otto";
+        habitMenueTitel[4]  = "sports";
 
     printCounted();
 
-    choiceHabit = stdMenue("||  Habits:\n", habitMenueTitel, 3);
+    choiceHabit = stdMenue("|\n|| a l l   h a b i t s ||\n|\n", habitMenueTitel, 5);
 
     switch (choiceHabit){
         case 0:

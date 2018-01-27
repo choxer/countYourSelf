@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/countYourSelf.dir/source/mainMenue.c.o"
   "CMakeFiles/countYourSelf.dir/source/showCurrent.c.o"
   "CMakeFiles/countYourSelf.dir/main.c.o"
+  "CMakeFiles/countYourSelf.dir/source/tools.c.o"
   "countYourSelf.pdb"
   "countYourSelf"
 )

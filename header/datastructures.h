@@ -1,10 +1,8 @@
 //
 // Created by rooty on 1/27/18.
 //
-
 #ifndef UNTITLED1_DATASTRUCTURES_H
 #define UNTITLED1_DATASTRUCTURES_H
-
 
 typedef struct sHabit{
     // description of habit
@@ -23,7 +21,8 @@ typedef struct sHabit{
 // habit[0] = cigarretes
 // habit[1] = beer
 // habit[2] = high%
-// habit[3] = sports
+// habit[3] = otto
+// habit[4] = sports
 tHabit habits[4];
 
 
@@ -39,8 +38,10 @@ typedef struct{
 } tDay;
 
 typedef struct sMonth{
+    // current Date
     struct sDate *currentDate;
 
+    // days in months
     int numberOfDays;
 } tMonth;
 

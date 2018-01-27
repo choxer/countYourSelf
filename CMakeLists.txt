@@ -11,4 +11,4 @@ add_executable(countYourSelf
         source/habits.c
         source/mainMenue.c
         source/showCurrent.c
-        main.c)
+        main.c source/tools.c header/tools.h)

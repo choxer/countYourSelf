@@ -231,6 +231,33 @@ source/showCurrent.c.s:
 	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/showCurrent.c.s
 .PHONY : source/showCurrent.c.s
 
+source/tools.o: source/tools.c.o
+
+.PHONY : source/tools.o
+
+# target to build an object file
+source/tools.c.o:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/tools.c.o
+.PHONY : source/tools.c.o
+
+source/tools.i: source/tools.c.i
+
+.PHONY : source/tools.i
+
+# target to preprocess a source file
+source/tools.c.i:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/tools.c.i
+.PHONY : source/tools.c.i
+
+source/tools.s: source/tools.c.s
+
+.PHONY : source/tools.s
+
+# target to generate assembly for a file
+source/tools.c.s:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/tools.c.s
+.PHONY : source/tools.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... source/showCurrent.o"
 	@echo "... source/showCurrent.i"
 	@echo "... source/showCurrent.s"
+	@echo "... source/tools.o"
+	@echo "... source/tools.i"
+	@echo "... source/tools.s"
 .PHONY : help
 
 

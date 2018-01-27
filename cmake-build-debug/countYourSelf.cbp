@@ -96,6 +96,9 @@
 		<Unit filename="/home/rooty/countYourSelf/header/showCurrent.h">
 			<Option target="countYourSelf"/>
 		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/header/tools.h">
+			<Option target="countYourSelf"/>
+		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/main.c">
 			<Option target="countYourSelf"/>
 		</Unit>
@@ -106,6 +109,9 @@
 			<Option target="countYourSelf"/>
 		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/source/showCurrent.c">
+			<Option target="countYourSelf"/>
+		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/source/tools.c">
 			<Option target="countYourSelf"/>
 		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/CMakeLists.txt">

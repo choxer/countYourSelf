@@ -13,17 +13,17 @@ int printMainMenue(){
         mainMenueTitel[0] = "show habits";
         mainMenueTitel[1] = "show today";
         mainMenueTitel[2] = "show current month";
-        mainMenueTitel[3] = "default";
+        mainMenueTitel[3] = "";
         mainMenueTitel[4] = "default";
         mainMenueTitel[5] = "default";
         mainMenueTitel[6] = "preferences";
-        mainMenueTitel[7] = "Sortieren";
+        mainMenueTitel[7] = "";
         mainMenueTitel[8] = "Auflisten";
         mainMenueTitel[9] = "Programm beenden";
 
     printCounted();
 
-    stdMenue("|| m a i n  m e n u e  ||\n", mainMenueTitel, 9);
+    stdMenue("|\n|| m a i n   m e n u e ||\n|\n", mainMenueTitel, 10);
 }
 
 int stdMenue(char *menuTitle, char **menuPoints, int numberOfPoints){
@@ -37,7 +37,7 @@ int stdMenue(char *menuTitle, char **menuPoints, int numberOfPoints){
     do{
         printf("%s", menuTitle);
 
-        for(int i = 0; i <= numberOfPoints; i++){
+        for(int i = 0; i < numberOfPoints; i++){
             printf("|  %2i. ", i+1);
             printf("%s", *(menuPoints + i));
             printf("\n");
