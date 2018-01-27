@@ -23,13 +23,15 @@ int printMainMenue(){
 
     printCounted();
 
-            // length of Titel = 66
-    stdMenue("|\n", mainMenueTitel, 9);
+    stdMenue("|| m a i n  m e n u e  ||\n", mainMenueTitel, 9);
 }
 
 int stdMenue(char *menuTitle, char **menuPoints, int numberOfPoints){
-    int  choice;
-    int  check;
+    // choosen menuePoint
+    int choice = 0;
+    // break from while loop
+    int check  = 0;
+    // stdin from user
     char input[5];
 
     do{
@@ -44,7 +46,7 @@ int stdMenue(char *menuTitle, char **menuPoints, int numberOfPoints){
         fgets(input, 5, stdin);
         choice = atoi(input);
 
-        if(choice > numberOfPoints || choice <= 0){
+        if(choice > numberOfPoints+1 || choice <= 0){
             printf("**error**: Ungueltige Eingabe..\n\n");
         }
         else{

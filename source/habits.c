@@ -9,8 +9,11 @@
 #include <stdlib.h>
 
 void showCigarettes(){
-    printf("|| Du hast heute %f Kippen geraucht...\n");
-    printf("|| Du hast diesen Monat %f Kippen geraucht...\n");
+    double today;
+    double month;
+
+    printf("|| Du hast heute %f Kippen geraucht...\n", today);
+    printf("|| Du hast diesen Monat %f Kippen geraucht...\n", month);
 }
 
 void showBeer(){
@@ -78,6 +81,8 @@ void showAllHabits(){
             break;
         case 3:
             showSports();
+            break;
+        default:
             break;
     }
 }
