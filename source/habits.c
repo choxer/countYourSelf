@@ -5,15 +5,40 @@
 #include "../header/habits.h"
 #include "../header/mainMenue.h"
 #include "../header/datastructures.h"
+#include "../header/tools.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+int cigaretteCounter;
+int beerCounter;
+int sportsCounter;
+int highpercentCounter;
+int emmaCounter;
+
 
 void showCigarettes(){
     double today;
     double month;
 
+    int input = 0;
+    int counter = 0;
+
+    tCigarette *newCigar = calloc( 1, sizeof(tCigarette));
+
     printf("|| Du hast heute %f Kippen geraucht...\n", today);
     printf("|| Du hast diesen Monat %f Kippen geraucht...\n", month);
+
+    printf("Wie viele Zigaretten hast du heute geraucht?\n");
+
+    scanf("%i[^\n]", &input);
+    clearBuffer();
+
+    newCigar->counter += input;
+    cigaretteCounter += input;
+
+    printf("Du hast %i Zigarretten fuer heute eingegeben\n", newCigar->counter);
+    printf("cigaretteCounter : %i\n", cigaretteCounter);
+
 }
 
 void showBeer(){

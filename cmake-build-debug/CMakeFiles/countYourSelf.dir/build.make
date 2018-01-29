@@ -177,13 +177,63 @@ CMakeFiles/countYourSelf.dir/source/tools.c.o.provides: CMakeFiles/countYourSelf
 CMakeFiles/countYourSelf.dir/source/tools.c.o.provides.build: CMakeFiles/countYourSelf.dir/source/tools.c.o
 
 
+CMakeFiles/countYourSelf.dir/source/timeStructure.c.o: CMakeFiles/countYourSelf.dir/flags.make
+CMakeFiles/countYourSelf.dir/source/timeStructure.c.o: ../source/timeStructure.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/countYourSelf.dir/source/timeStructure.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/countYourSelf.dir/source/timeStructure.c.o   -c /home/rooty/countYourSelf/source/timeStructure.c
+
+CMakeFiles/countYourSelf.dir/source/timeStructure.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/countYourSelf.dir/source/timeStructure.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rooty/countYourSelf/source/timeStructure.c > CMakeFiles/countYourSelf.dir/source/timeStructure.c.i
+
+CMakeFiles/countYourSelf.dir/source/timeStructure.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/countYourSelf.dir/source/timeStructure.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rooty/countYourSelf/source/timeStructure.c -o CMakeFiles/countYourSelf.dir/source/timeStructure.c.s
+
+CMakeFiles/countYourSelf.dir/source/timeStructure.c.o.requires:
+
+.PHONY : CMakeFiles/countYourSelf.dir/source/timeStructure.c.o.requires
+
+CMakeFiles/countYourSelf.dir/source/timeStructure.c.o.provides: CMakeFiles/countYourSelf.dir/source/timeStructure.c.o.requires
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/timeStructure.c.o.provides.build
+.PHONY : CMakeFiles/countYourSelf.dir/source/timeStructure.c.o.provides
+
+CMakeFiles/countYourSelf.dir/source/timeStructure.c.o.provides.build: CMakeFiles/countYourSelf.dir/source/timeStructure.c.o
+
+
+CMakeFiles/countYourSelf.dir/source/save.c.o: CMakeFiles/countYourSelf.dir/flags.make
+CMakeFiles/countYourSelf.dir/source/save.c.o: ../source/save.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/countYourSelf.dir/source/save.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/countYourSelf.dir/source/save.c.o   -c /home/rooty/countYourSelf/source/save.c
+
+CMakeFiles/countYourSelf.dir/source/save.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/countYourSelf.dir/source/save.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rooty/countYourSelf/source/save.c > CMakeFiles/countYourSelf.dir/source/save.c.i
+
+CMakeFiles/countYourSelf.dir/source/save.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/countYourSelf.dir/source/save.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rooty/countYourSelf/source/save.c -o CMakeFiles/countYourSelf.dir/source/save.c.s
+
+CMakeFiles/countYourSelf.dir/source/save.c.o.requires:
+
+.PHONY : CMakeFiles/countYourSelf.dir/source/save.c.o.requires
+
+CMakeFiles/countYourSelf.dir/source/save.c.o.provides: CMakeFiles/countYourSelf.dir/source/save.c.o.requires
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/save.c.o.provides.build
+.PHONY : CMakeFiles/countYourSelf.dir/source/save.c.o.provides
+
+CMakeFiles/countYourSelf.dir/source/save.c.o.provides.build: CMakeFiles/countYourSelf.dir/source/save.c.o
+
+
 # Object files for target countYourSelf
 countYourSelf_OBJECTS = \
 "CMakeFiles/countYourSelf.dir/source/habits.c.o" \
 "CMakeFiles/countYourSelf.dir/source/mainMenue.c.o" \
 "CMakeFiles/countYourSelf.dir/source/showCurrent.c.o" \
 "CMakeFiles/countYourSelf.dir/main.c.o" \
-"CMakeFiles/countYourSelf.dir/source/tools.c.o"
+"CMakeFiles/countYourSelf.dir/source/tools.c.o" \
+"CMakeFiles/countYourSelf.dir/source/timeStructure.c.o" \
+"CMakeFiles/countYourSelf.dir/source/save.c.o"
 
 # External object files for target countYourSelf
 countYourSelf_EXTERNAL_OBJECTS =
@@ -193,9 +243,11 @@ countYourSelf: CMakeFiles/countYourSelf.dir/source/mainMenue.c.o
 countYourSelf: CMakeFiles/countYourSelf.dir/source/showCurrent.c.o
 countYourSelf: CMakeFiles/countYourSelf.dir/main.c.o
 countYourSelf: CMakeFiles/countYourSelf.dir/source/tools.c.o
+countYourSelf: CMakeFiles/countYourSelf.dir/source/timeStructure.c.o
+countYourSelf: CMakeFiles/countYourSelf.dir/source/save.c.o
 countYourSelf: CMakeFiles/countYourSelf.dir/build.make
 countYourSelf: CMakeFiles/countYourSelf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable countYourSelf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable countYourSelf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/countYourSelf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +260,8 @@ CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/mainM
 CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/showCurrent.c.o.requires
 CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/main.c.o.requires
 CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/tools.c.o.requires
+CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/timeStructure.c.o.requires
+CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/save.c.o.requires
 
 .PHONY : CMakeFiles/countYourSelf.dir/requires
 

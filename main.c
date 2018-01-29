@@ -3,6 +3,8 @@
 
 #include "header/habits.h"
 #include "header/mainMenue.h"
+#include "header/showCurrent.h"
+#include "header/tools.h"
 
 int main() {
     int loop = 0;
@@ -14,9 +16,10 @@ int main() {
         switch (choiceMain) {
             case 0:
                 showAllHabits();
+                waitForEnter();
                 break;
             case 1:
-                // showCurrentDay();
+                showCurrentDay();
                 break;
             case 2:
                 // showCurrentMonth();

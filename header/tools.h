@@ -11,7 +11,7 @@ void clearBuffer(void);
 
 void printline(char,int);
 
-void WaitForEnter(void);
+void waitForEnter(void);
 
 int getText(char*,int,char**, int);
 

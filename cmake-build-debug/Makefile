@@ -204,6 +204,33 @@ source/mainMenue.c.s:
 	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/mainMenue.c.s
 .PHONY : source/mainMenue.c.s
 
+source/save.o: source/save.c.o
+
+.PHONY : source/save.o
+
+# target to build an object file
+source/save.c.o:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/save.c.o
+.PHONY : source/save.c.o
+
+source/save.i: source/save.c.i
+
+.PHONY : source/save.i
+
+# target to preprocess a source file
+source/save.c.i:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/save.c.i
+.PHONY : source/save.c.i
+
+source/save.s: source/save.c.s
+
+.PHONY : source/save.s
+
+# target to generate assembly for a file
+source/save.c.s:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/save.c.s
+.PHONY : source/save.c.s
+
 source/showCurrent.o: source/showCurrent.c.o
 
 .PHONY : source/showCurrent.o
@@ -230,6 +257,33 @@ source/showCurrent.s: source/showCurrent.c.s
 source/showCurrent.c.s:
 	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/showCurrent.c.s
 .PHONY : source/showCurrent.c.s
+
+source/timeStructure.o: source/timeStructure.c.o
+
+.PHONY : source/timeStructure.o
+
+# target to build an object file
+source/timeStructure.c.o:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/timeStructure.c.o
+.PHONY : source/timeStructure.c.o
+
+source/timeStructure.i: source/timeStructure.c.i
+
+.PHONY : source/timeStructure.i
+
+# target to preprocess a source file
+source/timeStructure.c.i:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/timeStructure.c.i
+.PHONY : source/timeStructure.c.i
+
+source/timeStructure.s: source/timeStructure.c.s
+
+.PHONY : source/timeStructure.s
+
+# target to generate assembly for a file
+source/timeStructure.c.s:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/timeStructure.c.s
+.PHONY : source/timeStructure.c.s
 
 source/tools.o: source/tools.c.o
 
@@ -276,9 +330,15 @@ help:
 	@echo "... source/mainMenue.o"
 	@echo "... source/mainMenue.i"
 	@echo "... source/mainMenue.s"
+	@echo "... source/save.o"
+	@echo "... source/save.i"
+	@echo "... source/save.s"
 	@echo "... source/showCurrent.o"
 	@echo "... source/showCurrent.i"
 	@echo "... source/showCurrent.s"
+	@echo "... source/timeStructure.o"
+	@echo "... source/timeStructure.i"
+	@echo "... source/timeStructure.s"
 	@echo "... source/tools.o"
 	@echo "... source/tools.i"
 	@echo "... source/tools.s"

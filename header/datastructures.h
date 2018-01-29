@@ -59,7 +59,22 @@ typedef struct sDate{
     struct sHabit habit[4];
 } tDate;
 
+typedef struct sCigarette{
+    // counter for all time
+    int counter;
+
+    // counter per day
+    int counterDay;
+
+
+
+} tCigarette;
+
+
 // maybe put year in an array of Years
 tDate currentYear[365];
+
+extern tHabit *FirstHabit;
+extern tHabit *LastHabit;
 
 #endif //UNTITLED1_DATASTRUCTURES_H

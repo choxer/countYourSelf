@@ -48,10 +48,10 @@ void printline(char text,int anz){
     printf("\n");
 }
 
-void WaitForEnter(void){
+void waitForEnter(void){
 
     //clearBuffer();
-    printf("Druecken sie Enter um fortzufahren..\n");
+    printf("Enter druecken um fortzufahren..\n");
     char enter;
     scanf("%[^\n]",&enter);
     clearBuffer();
