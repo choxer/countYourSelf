@@ -177,6 +177,33 @@ source/habits.c.s:
 	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/habits.c.s
 .PHONY : source/habits.c.s
 
+source/list.o: source/list.c.o
+
+.PHONY : source/list.o
+
+# target to build an object file
+source/list.c.o:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/list.c.o
+.PHONY : source/list.c.o
+
+source/list.i: source/list.c.i
+
+.PHONY : source/list.i
+
+# target to preprocess a source file
+source/list.c.i:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/list.c.i
+.PHONY : source/list.c.i
+
+source/list.s: source/list.c.s
+
+.PHONY : source/list.s
+
+# target to generate assembly for a file
+source/list.c.s:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/list.c.s
+.PHONY : source/list.c.s
+
 source/mainMenue.o: source/mainMenue.c.o
 
 .PHONY : source/mainMenue.o
@@ -327,6 +354,9 @@ help:
 	@echo "... source/habits.o"
 	@echo "... source/habits.i"
 	@echo "... source/habits.s"
+	@echo "... source/list.o"
+	@echo "... source/list.i"
+	@echo "... source/list.s"
 	@echo "... source/mainMenue.o"
 	@echo "... source/mainMenue.i"
 	@echo "... source/mainMenue.s"

@@ -43,10 +43,9 @@ int main() {
                 // showCurrentMonth();
                 break;
             case 8:
-                //
-                break;
-            case 9:
                 save();
+                break;
+            default:
                 break;
         }
 

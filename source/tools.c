@@ -10,8 +10,6 @@ int askYesorNo(char strQuestion[])
 {
     char Input;
     do{
-
-
         printf("%s\n",strQuestion);
 
         scanf("%c",&Input);

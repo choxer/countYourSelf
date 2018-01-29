@@ -17,12 +17,21 @@ typedef struct sHabit{
     struct sHabit *prev;
 
     // pointer on tDate
-    // struct sDate *currentDate;
+    struct sDate *currentDate;
 
-    // 0 = neutral 1 = positiv -1 = negativ
+    // 0 = neutral; 1 = positiv; -1 = negativ
     int asses;
 
 } tHabit;
+
+typedef struct sDate{
+    int day;
+
+    int month;
+
+    int year;
+
+} tDate;
 
 
 // habit[0] = cigarretes
@@ -30,7 +39,6 @@ typedef struct sHabit{
 // habit[2] = high%
 // habit[3] = otto
 // habit[4] = sports
-tHabit habits[4];
 
 // maybe put year in an array of Years
 // tDate currentYear[365];

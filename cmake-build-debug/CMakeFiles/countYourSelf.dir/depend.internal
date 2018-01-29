@@ -11,10 +11,15 @@ CMakeFiles/countYourSelf.dir/main.c.o
 CMakeFiles/countYourSelf.dir/source/habits.c.o
  /home/rooty/countYourSelf/header/datastructures.h
  /home/rooty/countYourSelf/header/habits.h
+ /home/rooty/countYourSelf/header/list.h
  /home/rooty/countYourSelf/header/mainMenue.h
  /home/rooty/countYourSelf/header/save.h
  /home/rooty/countYourSelf/header/tools.h
  /home/rooty/countYourSelf/source/habits.c
+CMakeFiles/countYourSelf.dir/source/list.c.o
+ /home/rooty/countYourSelf/header/datastructures.h
+ /home/rooty/countYourSelf/header/list.h
+ /home/rooty/countYourSelf/source/list.c
 CMakeFiles/countYourSelf.dir/source/mainMenue.c.o
  /home/rooty/countYourSelf/header/mainMenue.h
  /home/rooty/countYourSelf/source/mainMenue.c

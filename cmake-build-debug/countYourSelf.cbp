@@ -90,6 +90,9 @@
 		<Unit filename="/home/rooty/countYourSelf/header/habits.h">
 			<Option target="countYourSelf"/>
 		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/header/list.h">
+			<Option target="countYourSelf"/>
+		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/header/mainMenue.h">
 			<Option target="countYourSelf"/>
 		</Unit>
@@ -109,6 +112,9 @@
 			<Option target="countYourSelf"/>
 		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/source/habits.c">
+			<Option target="countYourSelf"/>
+		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/source/list.c">
 			<Option target="countYourSelf"/>
 		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/source/mainMenue.c">

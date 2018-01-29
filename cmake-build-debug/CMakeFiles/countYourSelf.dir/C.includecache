@@ -10,6 +10,10 @@
 
 /home/rooty/countYourSelf/header/habits.h
 
+/home/rooty/countYourSelf/header/list.h
+datastructures.h
+/home/rooty/countYourSelf/header/datastructures.h
+
 /home/rooty/countYourSelf/header/mainMenue.h
 
 /home/rooty/countYourSelf/header/save.h
@@ -47,10 +51,24 @@ header/save.h
 /home/rooty/countYourSelf/header/tools.h
 ../header/save.h
 /home/rooty/countYourSelf/header/save.h
+../header/list.h
+/home/rooty/countYourSelf/header/list.h
 stdio.h
 -
 stdlib.h
 -
+stdbool.h
+-
+
+/home/rooty/countYourSelf/source/list.c
+wchar.h
+-
+memory.h
+-
+../header/datastructures.h
+/home/rooty/countYourSelf/header/datastructures.h
+../header/list.h
+/home/rooty/countYourSelf/header/list.h
 
 /home/rooty/countYourSelf/source/mainMenue.c
 stdio.h

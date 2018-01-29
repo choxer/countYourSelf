@@ -7,8 +7,12 @@
 #include "../header/datastructures.h"
 #include "../header/tools.h"
 #include "../header/save.h"
+#include "../header/list.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+
+int habitCounter = 0;
 
 int cigaretteCounter = 0;
 int beerCounter = 0;
@@ -16,13 +20,20 @@ int sportsCounter = 0;
 int highpercentCounter = 0;
 int emmaCounter = 0;
 
+tHabit *FirstHabit = NULL;
+tHabit *LastHabit = NULL;
 
 void showCigarettes(){
-    double today;
-    double month;
 
     int input = 0;
     int counter = 0;
+
+    tDate *today = calloc( 1, sizeof(tDate));
+
+    tHabit *cigarette = calloc( 1, sizeof(tHabit));
+    cigarette->name  = "Zigaretten";
+    cigarette->asses = -1;
+    cigarette->currentDate = today;
 
     //printf("|| Du hast heute %f Kippen geraucht...\n", today);
     printf("|| Du hast insgesamt %i Kippen geraucht...\n", cigaretteCounter);
@@ -38,6 +49,7 @@ void showCigarettes(){
     printf("|   Du hast %i Zigarretten fuer heute eingegeben\n", input);
     printf("|   cigaretteCounter : %i\n", cigaretteCounter);
 
+    insertInDVList(cigarette);
     save();
     waitForEnter();
 }
@@ -49,8 +61,13 @@ void showBeer(){
     int input = 0;
     int counter = 0;
 
+    tHabit *beer = calloc( 1, sizeof(tHabit));
+    beer->name  = "Zigaretten";
+    beer->asses = -1;
+    //beer->next  = highpercent;
+
     //printf("|| Du hast heute %f Kippen geraucht...\n", today);
-    printf("|| Du hast insgesamt %i Bier getrunken...\n", beerCounter);
+    printf("||    Du hast insgesamt %i Bier getrunken...\n", beerCounter);
     //printf("|| Du hast diesen Monat %f Kippen geraucht...\n", month);
 
     printf("|| -> Wie viele Biere hast du heute getrunken?\n");
@@ -60,8 +77,8 @@ void showBeer(){
 
     beerCounter += input;
 
-    printf("|| Du hast %i Bier fuer heute eingegeben\n", input);
-    printf("|| beerCounter : %i\n", beerCounter);
+    printf("||    Du hast %i Bier fuer heute eingegeben\n", input);
+    printf("||    beerCounter : %i\n", beerCounter);
 
     save();
     waitForEnter();
@@ -112,10 +129,6 @@ void addHabit(int asses, char *name){
     // (currentYear+day)->habit = newHabit;
 }
 
-void addHabitToDate( tHabit habit, int habitIndex){
-    // currentDate->habit+habitIndex =
-}
-
 void showAllHabits(){
     int choiceHabit  = 0;
 
@@ -127,29 +140,32 @@ void showAllHabits(){
         habitMenueTitel[4]  = "sports";
         habitMenueTitel[5]  = "back";
 
-    printCounted();
+    do {
+        printCounted();
 
-    choiceHabit = stdMenue("|\n|| a l l   h a b i t s ||\n|\n", habitMenueTitel, 6);
+        choiceHabit = stdMenue("|\n|| a l l   h a b i t s ||\n|\n", habitMenueTitel, 6);
 
-    switch (choiceHabit){
-        case 0:
-            showCigarettes();
-            break;
-        case 1:
-            showBeer();
-            break;
-        case 2:
-            showHighPercent();
-            break;
-        case 3:
-
-            break;
-        case 4:
-            showSports();
-            break;
-        case 5:
-            return;
-        default:
-            break;
-    }
+        switch (choiceHabit) {
+            case 0:
+                showCigarettes();
+                break;
+            case 1:
+                showBeer();
+                break;
+            case 2:
+                showHighPercent();
+                break;
+            case 3:
+                // showOtto();
+                break;
+            case 4:
+                showSports();
+                break;
+            case 5:
+                return;
+            default:
+                break;
+        }
+        listHabits();
+    } while( true );
 }
