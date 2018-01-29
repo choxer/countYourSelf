@@ -11,14 +11,14 @@ int printMainMenue(){
     char *mainMenueTitel[10];
         mainMenueTitel[0] = "show habits";
         mainMenueTitel[1] = "show today";
-        mainMenueTitel[2] = "show current month";
-        mainMenueTitel[3] = "";
-        mainMenueTitel[4] = "default";
+        mainMenueTitel[2] = "show current week";
+        mainMenueTitel[3] = "show current month";
+        mainMenueTitel[4] = "";
         mainMenueTitel[5] = "default";
         mainMenueTitel[6] = "preferences";
         mainMenueTitel[7] = "";
-        mainMenueTitel[8] = "Auflisten";
-        mainMenueTitel[9] = "Programm beenden";
+        mainMenueTitel[8] = "";
+        mainMenueTitel[9] = "save";
 
     printCounted();
 

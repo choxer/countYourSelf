@@ -4,6 +4,7 @@
 #ifndef UNTITLED1_DATASTRUCTURES_H
 #define UNTITLED1_DATASTRUCTURES_H
 
+
 typedef struct sHabit{
     // description of habit
     char *name;
@@ -11,12 +12,18 @@ typedef struct sHabit{
     // counter
     int counter;
 
+    // pointer for 'DoppeltVerketteteListe'
+    struct sHabit *next;
+    struct sHabit *prev;
+
     // pointer on tDate
-    struct sDate *currentDate;
+    // struct sDate *currentDate;
 
     // 0 = neutral 1 = positiv -1 = negativ
     int asses;
+
 } tHabit;
+
 
 // habit[0] = cigarretes
 // habit[1] = beer
@@ -25,54 +32,16 @@ typedef struct sHabit{
 // habit[4] = sports
 tHabit habits[4];
 
-
-typedef struct{
-    // current Time/ Date
-    struct sDate  *currentDate;
-    struct sMonth *currentMonth;
-
-    // boolean values
-    int morning;
-    int afternoon;
-    int evening;
-} tDay;
-
-typedef struct sMonth{
-    // current Date
-    struct sDate *currentDate;
-
-    // days in months
-    int numberOfDays;
-} tMonth;
-
-typedef struct sDate{
-    //
-    int     year;
-    tMonth *month;
-    tDay   *day;
-
-    // pointer to next an previous month
-    struct sDate *next;
-    struct sDate *prev;
-
-    //pointer to each habit
-    struct sHabit habit[4];
-} tDate;
-
-typedef struct sCigarette{
-    // counter for all time
-    int counter;
-
-    // counter per day
-    int counterDay;
-
-
-
-} tCigarette;
-
-
 // maybe put year in an array of Years
-tDate currentYear[365];
+// tDate currentYear[365];
+
+extern int habitCounter;
+
+extern int cigaretteCounter;
+extern int beerCounter;
+extern int sportsCounter;
+extern int highpercentCounter;
+extern int emmaCounter;
 
 extern tHabit *FirstHabit;
 extern tHabit *LastHabit;

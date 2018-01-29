@@ -5,30 +5,33 @@
 #include "header/mainMenue.h"
 #include "header/showCurrent.h"
 #include "header/tools.h"
+#include "header/save.h"
 
 int main() {
     int loop = 0;
     int choiceMain = 0;
 
+    load();
+
     do {
+
         choiceMain = printMainMenue();
 
         switch (choiceMain) {
             case 0:
                 showAllHabits();
-                waitForEnter();
                 break;
             case 1:
                 showCurrentDay();
                 break;
             case 2:
-                // showCurrentMonth();
+                // showCurrentWeek();
                 break;
             case 3:
-                //
+                // showCurrentMonth();
                 break;
             case 4:
-                // showCurrentMonth();
+
                 break;
             case 5:
                 // showCurrentMonth();
@@ -40,10 +43,10 @@ int main() {
                 // showCurrentMonth();
                 break;
             case 8:
-                // showCurrentMonth();
+                //
                 break;
             case 9:
-                printf("\nshould end programm && save the data");
+                save();
                 break;
         }
 
