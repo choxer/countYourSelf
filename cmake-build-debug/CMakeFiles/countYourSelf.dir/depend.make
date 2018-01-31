@@ -8,6 +8,8 @@ CMakeFiles/countYourSelf.dir/main.c.o: ../header/showCurrent.h
 CMakeFiles/countYourSelf.dir/main.c.o: ../header/tools.h
 CMakeFiles/countYourSelf.dir/main.c.o: ../main.c
 
+CMakeFiles/countYourSelf.dir/source/day.c.o: ../source/day.c
+
 CMakeFiles/countYourSelf.dir/source/habits.c.o: ../header/datastructures.h
 CMakeFiles/countYourSelf.dir/source/habits.c.o: ../header/habits.h
 CMakeFiles/countYourSelf.dir/source/habits.c.o: ../header/list.h
@@ -18,6 +20,7 @@ CMakeFiles/countYourSelf.dir/source/habits.c.o: ../source/habits.c
 
 CMakeFiles/countYourSelf.dir/source/list.c.o: ../header/datastructures.h
 CMakeFiles/countYourSelf.dir/source/list.c.o: ../header/list.h
+CMakeFiles/countYourSelf.dir/source/list.c.o: ../header/tools.h
 CMakeFiles/countYourSelf.dir/source/list.c.o: ../source/list.c
 
 CMakeFiles/countYourSelf.dir/source/mainMenue.c.o: ../header/mainMenue.h

@@ -40,6 +40,8 @@ header/tools.h
 header/save.h
 /home/rooty/countYourSelf/header/save.h
 
+/home/rooty/countYourSelf/source/day.c
+
 /home/rooty/countYourSelf/source/habits.c
 ../header/habits.h
 /home/rooty/countYourSelf/header/habits.h
@@ -61,7 +63,7 @@ stdbool.h
 -
 
 /home/rooty/countYourSelf/source/list.c
-wchar.h
+stdio.h
 -
 memory.h
 -
@@ -69,6 +71,8 @@ memory.h
 /home/rooty/countYourSelf/header/datastructures.h
 ../header/list.h
 /home/rooty/countYourSelf/header/list.h
+../header/tools.h
+/home/rooty/countYourSelf/header/tools.h
 
 /home/rooty/countYourSelf/source/mainMenue.c
 stdio.h

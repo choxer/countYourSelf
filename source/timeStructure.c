@@ -45,3 +45,11 @@ int actualTime()
     // returns: Www Mmm dd hh:mm:ss yyyy
     printf("%s\n", asctime(actTime));
 }
+
+int needNewday(){
+
+    // check if last date is actual date
+
+
+
+}

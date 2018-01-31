@@ -7,9 +7,10 @@
 
 #include "datastructures.h"
 
-int insertInDVList(tHabit *Neu);
+int insertHabitInDVList(tHabit *Neu);
 
-tHabit *removeFromDVList(char *tHabitName);
+tHabit *removeHabitFromDVList(char *tHabitName);
+
 
 int listHabits();
 

@@ -150,6 +150,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/main.c.s
 .PHONY : main.c.s
 
+source/day.o: source/day.c.o
+
+.PHONY : source/day.o
+
+# target to build an object file
+source/day.c.o:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/day.c.o
+.PHONY : source/day.c.o
+
+source/day.i: source/day.c.i
+
+.PHONY : source/day.i
+
+# target to preprocess a source file
+source/day.c.i:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/day.c.i
+.PHONY : source/day.c.i
+
+source/day.s: source/day.c.s
+
+.PHONY : source/day.s
+
+# target to generate assembly for a file
+source/day.c.s:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/day.c.s
+.PHONY : source/day.c.s
+
 source/habits.o: source/habits.c.o
 
 .PHONY : source/habits.o
@@ -351,6 +378,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... source/day.o"
+	@echo "... source/day.i"
+	@echo "... source/day.s"
 	@echo "... source/habits.o"
 	@echo "... source/habits.i"
 	@echo "... source/habits.s"

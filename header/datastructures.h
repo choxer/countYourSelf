@@ -4,13 +4,15 @@
 #ifndef UNTITLED1_DATASTRUCTURES_H
 #define UNTITLED1_DATASTRUCTURES_H
 
+#define MAXHABITS 50
+
 
 typedef struct sHabit{
     // description of habit
     char *name;
 
     // counter
-    int counter;
+    double counter;
 
     // pointer for 'DoppeltVerketteteListe'
     struct sHabit *next;
@@ -25,11 +27,29 @@ typedef struct sHabit{
 } tHabit;
 
 typedef struct sDate{
+    // DATUM
     int day;
-
     int month;
-
     int year;
+
+    // HABIT COUNTER
+    //double cigarette;
+    //double beer;
+    //double highpercent;
+    //double otto;
+    //double sports;
+
+    // pointer auf HABIT
+        // tHabit currentHabits[MAXHABITS];
+    tHabit *cigarette;
+    tHabit *beer;
+    tHabit *highpercent;
+    tHabit *otto;
+    tHabit *sports;
+    tHabit *gewicht;
+
+    // GEWICHT
+    // double gewicht;
 
 } tDate;
 
@@ -41,7 +61,7 @@ typedef struct sDate{
 // habit[4] = sports
 
 // maybe put year in an array of Years
-// tDate currentYear[365];
+tDate currentYear[365];
 
 extern int habitCounter;
 
@@ -51,7 +71,11 @@ extern int sportsCounter;
 extern int highpercentCounter;
 extern int emmaCounter;
 
+
 extern tHabit *FirstHabit;
 extern tHabit *LastHabit;
+
+extern tDate *FirstDay;
+extern tDate *LastDay;
 
 #endif //UNTITLED1_DATASTRUCTURES_H

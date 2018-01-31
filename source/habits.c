@@ -30,10 +30,13 @@ void showCigarettes(){
 
     tDate *today = calloc( 1, sizeof(tDate));
 
+    today->day = 99;
+    //today->cigarette->currentDate = today;
+
     tHabit *cigarette = calloc( 1, sizeof(tHabit));
     cigarette->name  = "Zigaretten";
     cigarette->asses = -1;
-    cigarette->currentDate = today;
+    //cigarette->currentDate = today;
 
     //printf("|| Du hast heute %f Kippen geraucht...\n", today);
     printf("|| Du hast insgesamt %i Kippen geraucht...\n", cigaretteCounter);
@@ -46,10 +49,12 @@ void showCigarettes(){
 
     cigaretteCounter += input;
 
+    cigarette->counter = input;
+
     printf("|   Du hast %i Zigarretten fuer heute eingegeben\n", input);
     printf("|   cigaretteCounter : %i\n", cigaretteCounter);
 
-    insertInDVList(cigarette);
+    insertHabitInDVList(cigarette);
     save();
     waitForEnter();
 }
@@ -76,6 +81,8 @@ void showBeer(){
     clearBuffer();
 
     beerCounter += input;
+
+    beer->counter = input;
 
     printf("||    Du hast %i Bier fuer heute eingegeben\n", input);
     printf("||    beerCounter : %i\n", beerCounter);
@@ -119,7 +126,8 @@ void addHabit(int asses, char *name){
 
     newHabit->asses = asses;
     newHabit->name = name;
-    newHabit->counter = 0;
+
+    //newHabit->counter = 0;
     // newHabit->currentDate = currentDate;
 
     // get day for index from currentDate
@@ -127,23 +135,32 @@ void addHabit(int asses, char *name){
     // int day;
     // assign habit to the current Date in currentYear
     // (currentYear+day)->habit = newHabit;
+
+    insertHabitInDVList(newHabit);
+
+    habitCounter++;
 }
 
 void showAllHabits(){
     int choiceHabit  = 0;
 
-    char *habitMenueTitel[6];
+    char *habitMenueTitel[7];
         habitMenueTitel[0]  = "cigarretes";
         habitMenueTitel[1]  = "beer";
         habitMenueTitel[2]  = "high %";
         habitMenueTitel[3]  = "otto";
         habitMenueTitel[4]  = "sports";
-        habitMenueTitel[5]  = "back";
+        habitMenueTitel[5]  = "list";
+        habitMenueTitel[6]  = "back";
+
+    listHabits();
 
     do {
         printCounted();
 
-        choiceHabit = stdMenue("|\n|| a l l   h a b i t s ||\n|\n", habitMenueTitel, 6);
+        choiceHabit = stdMenue("|\n|| a l l   h a b i t s ||\n|\n", habitMenueTitel, 7);
+
+
 
         switch (choiceHabit) {
             case 0:
@@ -162,10 +179,12 @@ void showAllHabits(){
                 showSports();
                 break;
             case 5:
+                listHabits();
+                break;
+            case 6:
                 return;
             default:
                 break;
         }
-        listHabits();
     } while( true );
 }

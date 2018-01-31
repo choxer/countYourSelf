@@ -111,6 +111,9 @@
 		<Unit filename="/home/rooty/countYourSelf/main.c">
 			<Option target="countYourSelf"/>
 		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/source/day.c">
+			<Option target="countYourSelf"/>
+		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/source/habits.c">
 			<Option target="countYourSelf"/>
 		</Unit>

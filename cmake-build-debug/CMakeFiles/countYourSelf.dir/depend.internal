@@ -8,6 +8,8 @@ CMakeFiles/countYourSelf.dir/main.c.o
  /home/rooty/countYourSelf/header/showCurrent.h
  /home/rooty/countYourSelf/header/tools.h
  /home/rooty/countYourSelf/main.c
+CMakeFiles/countYourSelf.dir/source/day.c.o
+ /home/rooty/countYourSelf/source/day.c
 CMakeFiles/countYourSelf.dir/source/habits.c.o
  /home/rooty/countYourSelf/header/datastructures.h
  /home/rooty/countYourSelf/header/habits.h
@@ -19,6 +21,7 @@ CMakeFiles/countYourSelf.dir/source/habits.c.o
 CMakeFiles/countYourSelf.dir/source/list.c.o
  /home/rooty/countYourSelf/header/datastructures.h
  /home/rooty/countYourSelf/header/list.h
+ /home/rooty/countYourSelf/header/tools.h
  /home/rooty/countYourSelf/source/list.c
 CMakeFiles/countYourSelf.dir/source/mainMenue.c.o
  /home/rooty/countYourSelf/header/mainMenue.h

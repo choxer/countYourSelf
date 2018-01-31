@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/rooty/countYourSelf/main.c" "/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles/countYourSelf.dir/main.c.o"
+  "/home/rooty/countYourSelf/source/day.c" "/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles/countYourSelf.dir/source/day.c.o"
   "/home/rooty/countYourSelf/source/habits.c" "/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles/countYourSelf.dir/source/habits.c.o"
   "/home/rooty/countYourSelf/source/list.c" "/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles/countYourSelf.dir/source/list.c.o"
   "/home/rooty/countYourSelf/source/mainMenue.c" "/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles/countYourSelf.dir/source/mainMenue.c.o"

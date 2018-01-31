@@ -2,12 +2,14 @@
 // Created by rooty on 1/29/18.
 //
 
-#include <wchar.h>
+#include <stdio.h>
 #include <memory.h>
 #include "../header/datastructures.h"
 #include "../header/list.h"
+#include "../header/tools.h"
 
-int insertInDVList(tHabit *Neu)
+
+int insertHabitInDVList(tHabit *Neu)
 {
     tHabit *temp = FirstHabit;
 
@@ -61,7 +63,7 @@ int insertInDVList(tHabit *Neu)
     return 0;
 }
 
-tHabit *removeFromDVList(char *tHabitName)
+tHabit *removeHabitFromDVList(char *tHabitName)
 {
     tHabit *tmp = NULL, *previous = NULL;
 
@@ -109,17 +111,28 @@ tHabit *removeFromDVList(char *tHabitName)
 
 int listOneHabit(tHabit *tempHabit){
     tDate *currDate = tempHabit->currentDate;
-    int counter     = tempHabit->counter;
+    double counter  = tempHabit->counter;
     char *name      = tempHabit->name;
 
-
+    printf("Name: %s\n", name);
+    printf("Counter: %f\n", counter);
 }
 
 int listHabits(){
-    tHabit *tmpHabit = FirstHabit;
 
-    while (tmpHabit != NULL){
-        listOneHabit( tmpHabit );
-        tmpHabit = tmpHabit->next;
+    if(FirstHabit == NULL){
+        printf("\nKeine Habits vorhanden!\n");
     }
+    else{
+        tHabit *tmpHabit = FirstHabit;
+
+        while (tmpHabit != NULL){
+            printf("A L L E  S T A T S: \n");
+            listOneHabit( tmpHabit );
+            tmpHabit = tmpHabit->next;
+        }
+    }
+    waitForEnter();
+
+    return 0;
 }

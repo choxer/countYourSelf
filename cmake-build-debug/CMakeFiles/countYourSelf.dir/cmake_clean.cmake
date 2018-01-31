@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/countYourSelf.dir/source/timeStructure.c.o"
   "CMakeFiles/countYourSelf.dir/source/save.c.o"
   "CMakeFiles/countYourSelf.dir/source/list.c.o"
+  "CMakeFiles/countYourSelf.dir/source/day.c.o"
   "countYourSelf.pdb"
   "countYourSelf"
 )

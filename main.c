@@ -11,7 +11,8 @@ int main() {
     int loop = 0;
     int choiceMain = 0;
 
-    load();
+    //load();
+    // isNewDay();
 
     do {
 
