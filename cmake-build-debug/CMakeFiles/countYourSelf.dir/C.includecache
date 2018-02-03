@@ -16,11 +16,15 @@ datastructures.h
 
 /home/rooty/countYourSelf/header/mainMenue.h
 
+/home/rooty/countYourSelf/header/money.h
+
 /home/rooty/countYourSelf/header/save.h
 
 /home/rooty/countYourSelf/header/showCurrent.h
 
 /home/rooty/countYourSelf/header/timeStructure.h
+datastructures.h
+/home/rooty/countYourSelf/header/datastructures.h
 
 /home/rooty/countYourSelf/header/tools.h
 
@@ -39,8 +43,16 @@ header/tools.h
 /home/rooty/countYourSelf/header/tools.h
 header/save.h
 /home/rooty/countYourSelf/header/save.h
+header/timeStructure.h
+/home/rooty/countYourSelf/header/timeStructure.h
+header/datastructures.h
+/home/rooty/countYourSelf/header/datastructures.h
+header/money.h
+/home/rooty/countYourSelf/header/money.h
 
 /home/rooty/countYourSelf/source/day.c
+
+/home/rooty/countYourSelf/source/free.c
 
 /home/rooty/countYourSelf/source/habits.c
 ../header/habits.h
@@ -67,6 +79,8 @@ stdio.h
 -
 memory.h
 -
+stdlib.h
+-
 ../header/datastructures.h
 /home/rooty/countYourSelf/header/datastructures.h
 ../header/list.h
@@ -81,6 +95,14 @@ stdlib.h
 -
 ../header/mainMenue.h
 /home/rooty/countYourSelf/header/mainMenue.h
+
+/home/rooty/countYourSelf/source/money.c
+stdio.h
+-
+../header/datastructures.h
+/home/rooty/countYourSelf/header/datastructures.h
+../header/money.h
+/home/rooty/countYourSelf/header/money.h
 
 /home/rooty/countYourSelf/source/save.c
 stdio.h
@@ -113,8 +135,12 @@ time.h
 -
 stdbool.h
 -
+stdlib.h
+-
 ../header/timeStructure.h
 /home/rooty/countYourSelf/header/timeStructure.h
+../header/datastructures.h
+/home/rooty/countYourSelf/header/datastructures.h
 
 /home/rooty/countYourSelf/source/tools.c
 stdio.h

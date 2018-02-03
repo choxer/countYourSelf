@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <memory.h>
+#include <stdlib.h>
 #include "../header/datastructures.h"
 #include "../header/list.h"
 #include "../header/tools.h"
@@ -19,6 +20,7 @@ int insertHabitInDVList(tHabit *Neu)
 
     if (FirstHabit == NULL)
     {  // Fall 1: Liste ist leer
+        printf("Liste leer...\n");
         Neu->next = Neu->prev = NULL;
         FirstHabit = LastHabit = Neu;
         return 1;
@@ -30,6 +32,7 @@ int insertHabitInDVList(tHabit *Neu)
 
     if (cmp < 0)
     {  // Fall 2: vor dem ersten Element einfuegen
+        printf("Vor 1. Element...\n");
         Neu->next = FirstHabit;
         Neu->prev = NULL;
         FirstHabit = FirstHabit->prev = Neu;
@@ -38,6 +41,7 @@ int insertHabitInDVList(tHabit *Neu)
 
     if (cmp > 0)
     {  // Fall 3: nach dem letzten Element einfuegen
+        printf("nach letztem Element...\n");
         Neu->prev = LastHabit;
         Neu->next = NULL;
         LastHabit = LastHabit->next = Neu;
@@ -52,6 +56,7 @@ int insertHabitInDVList(tHabit *Neu)
 
         if (cmp2 > 0)
         {
+            printf("zwischen zwei elemente...\n");
             Neu->next = temp->next;
             Neu->prev = temp;
             temp->next = temp->next->prev = Neu;
@@ -115,7 +120,7 @@ int listOneHabit(tHabit *tempHabit){
     char *name      = tempHabit->name;
 
     printf("Name: %s\n", name);
-    printf("Counter: %f\n", counter);
+    printf("Counter: %.2f\n", counter);
 }
 
 int listHabits(){
@@ -125,12 +130,13 @@ int listHabits(){
     }
     else{
         tHabit *tmpHabit = FirstHabit;
+        printf("A L L E  S T A T S: \n");
 
         while (tmpHabit != NULL){
-            printf("A L L E  S T A T S: \n");
             listOneHabit( tmpHabit );
             tmpHabit = tmpHabit->next;
         }
+        free(tmpHabit);
     }
     waitForEnter();
 

@@ -5,7 +5,11 @@
 #ifndef COUNTYOURSELF_TIME_H
 #define COUNTYOURSELF_TIME_H
 
+#include "datastructures.h"
+
 void hour();
-int actualTime();
+tDate *actualTime();
+int needNewDay();
+int newDay(tDate *);
 
 #endif //COUNTYOURSELF_TIME_H

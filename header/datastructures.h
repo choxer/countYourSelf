@@ -61,7 +61,13 @@ typedef struct sDate{
 // habit[4] = sports
 
 // maybe put year in an array of Years
-tDate currentYear[365];
+extern int tDateCounter;
+tDate *currentYear[365];
+
+extern tDate *FirstDay;
+extern tDate *LastDay;
+
+
 
 extern int habitCounter;
 
@@ -75,7 +81,20 @@ extern int emmaCounter;
 extern tHabit *FirstHabit;
 extern tHabit *LastHabit;
 
-extern tDate *FirstDay;
-extern tDate *LastDay;
+
+///
+// MONEY
+///
+
+typedef struct sMoney{
+
+    double amount;
+
+    tDate *currentDay;
+
+} tMoney;
+
+extern double total;
+
 
 #endif //UNTITLED1_DATASTRUCTURES_H

@@ -87,6 +87,9 @@
 		<Unit filename="/home/rooty/countYourSelf/header/datastructures.h">
 			<Option target="countYourSelf"/>
 		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/header/free.h">
+			<Option target="countYourSelf"/>
+		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/header/habits.h">
 			<Option target="countYourSelf"/>
 		</Unit>
@@ -94,6 +97,9 @@
 			<Option target="countYourSelf"/>
 		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/header/mainMenue.h">
+			<Option target="countYourSelf"/>
+		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/header/money.h">
 			<Option target="countYourSelf"/>
 		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/header/save.h">
@@ -114,6 +120,9 @@
 		<Unit filename="/home/rooty/countYourSelf/source/day.c">
 			<Option target="countYourSelf"/>
 		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/source/free.c">
+			<Option target="countYourSelf"/>
+		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/source/habits.c">
 			<Option target="countYourSelf"/>
 		</Unit>
@@ -121,6 +130,9 @@
 			<Option target="countYourSelf"/>
 		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/source/mainMenue.c">
+			<Option target="countYourSelf"/>
+		</Unit>
+		<Unit filename="/home/rooty/countYourSelf/source/money.c">
 			<Option target="countYourSelf"/>
 		</Unit>
 		<Unit filename="/home/rooty/countYourSelf/source/save.c">

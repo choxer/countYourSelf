@@ -6,16 +6,29 @@
 #include "header/showCurrent.h"
 #include "header/tools.h"
 #include "header/save.h"
+#include "header/timeStructure.h"
+#include "header/datastructures.h"
+#include "header/money.h"
 
 int main() {
     int loop = 0;
     int choiceMain = 0;
 
-    //load();
+    // load();
     // isNewDay();
 
-    do {
+    needNewDay();
 
+    printf("currentYear[0]: %02d.%02d.%d", currentYear[0]->day, currentYear[0]->month, currentYear[0]->year);
+
+    showTotal();
+
+
+
+    // actualTime();
+
+    /*
+    do {
         choiceMain = printMainMenue();
 
         switch (choiceMain) {
@@ -51,5 +64,7 @@ int main() {
         }
 
     }while (!loop);
+    */
+
     return 0;
 }

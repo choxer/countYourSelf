@@ -1,5 +1,5 @@
 <anfang>
-<cigarettecounter>2</cigarettecounter>
-<beercounter>2</beercounter>
+<cigarettecounter>5</cigarettecounter>
+<beercounter>6</beercounter>
 <sportscounter>0</sportscounter>
 <ende>

@@ -273,6 +273,54 @@ CMakeFiles/countYourSelf.dir/source/day.c.o.provides: CMakeFiles/countYourSelf.d
 CMakeFiles/countYourSelf.dir/source/day.c.o.provides.build: CMakeFiles/countYourSelf.dir/source/day.c.o
 
 
+CMakeFiles/countYourSelf.dir/source/free.c.o: CMakeFiles/countYourSelf.dir/flags.make
+CMakeFiles/countYourSelf.dir/source/free.c.o: ../source/free.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/countYourSelf.dir/source/free.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/countYourSelf.dir/source/free.c.o   -c /home/rooty/countYourSelf/source/free.c
+
+CMakeFiles/countYourSelf.dir/source/free.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/countYourSelf.dir/source/free.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rooty/countYourSelf/source/free.c > CMakeFiles/countYourSelf.dir/source/free.c.i
+
+CMakeFiles/countYourSelf.dir/source/free.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/countYourSelf.dir/source/free.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rooty/countYourSelf/source/free.c -o CMakeFiles/countYourSelf.dir/source/free.c.s
+
+CMakeFiles/countYourSelf.dir/source/free.c.o.requires:
+
+.PHONY : CMakeFiles/countYourSelf.dir/source/free.c.o.requires
+
+CMakeFiles/countYourSelf.dir/source/free.c.o.provides: CMakeFiles/countYourSelf.dir/source/free.c.o.requires
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/free.c.o.provides.build
+.PHONY : CMakeFiles/countYourSelf.dir/source/free.c.o.provides
+
+CMakeFiles/countYourSelf.dir/source/free.c.o.provides.build: CMakeFiles/countYourSelf.dir/source/free.c.o
+
+
+CMakeFiles/countYourSelf.dir/source/money.c.o: CMakeFiles/countYourSelf.dir/flags.make
+CMakeFiles/countYourSelf.dir/source/money.c.o: ../source/money.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/countYourSelf.dir/source/money.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/countYourSelf.dir/source/money.c.o   -c /home/rooty/countYourSelf/source/money.c
+
+CMakeFiles/countYourSelf.dir/source/money.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/countYourSelf.dir/source/money.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rooty/countYourSelf/source/money.c > CMakeFiles/countYourSelf.dir/source/money.c.i
+
+CMakeFiles/countYourSelf.dir/source/money.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/countYourSelf.dir/source/money.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rooty/countYourSelf/source/money.c -o CMakeFiles/countYourSelf.dir/source/money.c.s
+
+CMakeFiles/countYourSelf.dir/source/money.c.o.requires:
+
+.PHONY : CMakeFiles/countYourSelf.dir/source/money.c.o.requires
+
+CMakeFiles/countYourSelf.dir/source/money.c.o.provides: CMakeFiles/countYourSelf.dir/source/money.c.o.requires
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/money.c.o.provides.build
+.PHONY : CMakeFiles/countYourSelf.dir/source/money.c.o.provides
+
+CMakeFiles/countYourSelf.dir/source/money.c.o.provides.build: CMakeFiles/countYourSelf.dir/source/money.c.o
+
+
 # Object files for target countYourSelf
 countYourSelf_OBJECTS = \
 "CMakeFiles/countYourSelf.dir/source/habits.c.o" \
@@ -283,7 +331,9 @@ countYourSelf_OBJECTS = \
 "CMakeFiles/countYourSelf.dir/source/timeStructure.c.o" \
 "CMakeFiles/countYourSelf.dir/source/save.c.o" \
 "CMakeFiles/countYourSelf.dir/source/list.c.o" \
-"CMakeFiles/countYourSelf.dir/source/day.c.o"
+"CMakeFiles/countYourSelf.dir/source/day.c.o" \
+"CMakeFiles/countYourSelf.dir/source/free.c.o" \
+"CMakeFiles/countYourSelf.dir/source/money.c.o"
 
 # External object files for target countYourSelf
 countYourSelf_EXTERNAL_OBJECTS =
@@ -297,9 +347,11 @@ countYourSelf: CMakeFiles/countYourSelf.dir/source/timeStructure.c.o
 countYourSelf: CMakeFiles/countYourSelf.dir/source/save.c.o
 countYourSelf: CMakeFiles/countYourSelf.dir/source/list.c.o
 countYourSelf: CMakeFiles/countYourSelf.dir/source/day.c.o
+countYourSelf: CMakeFiles/countYourSelf.dir/source/free.c.o
+countYourSelf: CMakeFiles/countYourSelf.dir/source/money.c.o
 countYourSelf: CMakeFiles/countYourSelf.dir/build.make
 countYourSelf: CMakeFiles/countYourSelf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable countYourSelf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rooty/countYourSelf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable countYourSelf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/countYourSelf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -316,6 +368,8 @@ CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/timeS
 CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/save.c.o.requires
 CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/list.c.o.requires
 CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/day.c.o.requires
+CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/free.c.o.requires
+CMakeFiles/countYourSelf.dir/requires: CMakeFiles/countYourSelf.dir/source/money.c.o.requires
 
 .PHONY : CMakeFiles/countYourSelf.dir/requires
 

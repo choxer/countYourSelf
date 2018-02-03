@@ -20,6 +20,7 @@ int sportsCounter = 0;
 int highpercentCounter = 0;
 int emmaCounter = 0;
 
+
 tHabit *FirstHabit = NULL;
 tHabit *LastHabit = NULL;
 
@@ -67,7 +68,7 @@ void showBeer(){
     int counter = 0;
 
     tHabit *beer = calloc( 1, sizeof(tHabit));
-    beer->name  = "Zigaretten";
+    beer->name  = "Biere";
     beer->asses = -1;
     //beer->next  = highpercent;
 
@@ -86,6 +87,8 @@ void showBeer(){
 
     printf("||    Du hast %i Bier fuer heute eingegeben\n", input);
     printf("||    beerCounter : %i\n", beerCounter);
+
+    insertHabitInDVList(beer);
 
     save();
     waitForEnter();
@@ -152,6 +155,12 @@ void showAllHabits(){
         habitMenueTitel[4]  = "sports";
         habitMenueTitel[5]  = "list";
         habitMenueTitel[6]  = "back";
+
+    // test
+    tHabit *test = calloc( 1, sizeof(tHabit));
+    test->name = "test";
+
+    //FirstHabit = test;
 
     listHabits();
 

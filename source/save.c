@@ -44,7 +44,7 @@ int load(){
                 if ( strncmp( zeile + 13 + len, "</beercounter>", 14) == 0 ){
                     char *beercounter = calloc( len + 1, sizeof(char));
                     strncpy( beercounter, zeile + 13, len);
-                    beerCounter = atoi((beercounter));
+                    //strtof(beercounter, )
                     //printf("%i\n", beerCounter);
                     free(beercounter);
                 }

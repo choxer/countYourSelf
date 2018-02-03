@@ -177,6 +177,33 @@ source/day.c.s:
 	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/day.c.s
 .PHONY : source/day.c.s
 
+source/free.o: source/free.c.o
+
+.PHONY : source/free.o
+
+# target to build an object file
+source/free.c.o:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/free.c.o
+.PHONY : source/free.c.o
+
+source/free.i: source/free.c.i
+
+.PHONY : source/free.i
+
+# target to preprocess a source file
+source/free.c.i:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/free.c.i
+.PHONY : source/free.c.i
+
+source/free.s: source/free.c.s
+
+.PHONY : source/free.s
+
+# target to generate assembly for a file
+source/free.c.s:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/free.c.s
+.PHONY : source/free.c.s
+
 source/habits.o: source/habits.c.o
 
 .PHONY : source/habits.o
@@ -257,6 +284,33 @@ source/mainMenue.s: source/mainMenue.c.s
 source/mainMenue.c.s:
 	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/mainMenue.c.s
 .PHONY : source/mainMenue.c.s
+
+source/money.o: source/money.c.o
+
+.PHONY : source/money.o
+
+# target to build an object file
+source/money.c.o:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/money.c.o
+.PHONY : source/money.c.o
+
+source/money.i: source/money.c.i
+
+.PHONY : source/money.i
+
+# target to preprocess a source file
+source/money.c.i:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/money.c.i
+.PHONY : source/money.c.i
+
+source/money.s: source/money.c.s
+
+.PHONY : source/money.s
+
+# target to generate assembly for a file
+source/money.c.s:
+	$(MAKE) -f CMakeFiles/countYourSelf.dir/build.make CMakeFiles/countYourSelf.dir/source/money.c.s
+.PHONY : source/money.c.s
 
 source/save.o: source/save.c.o
 
@@ -381,6 +435,9 @@ help:
 	@echo "... source/day.o"
 	@echo "... source/day.i"
 	@echo "... source/day.s"
+	@echo "... source/free.o"
+	@echo "... source/free.i"
+	@echo "... source/free.s"
 	@echo "... source/habits.o"
 	@echo "... source/habits.i"
 	@echo "... source/habits.s"
@@ -390,6 +447,9 @@ help:
 	@echo "... source/mainMenue.o"
 	@echo "... source/mainMenue.i"
 	@echo "... source/mainMenue.s"
+	@echo "... source/money.o"
+	@echo "... source/money.i"
+	@echo "... source/money.s"
 	@echo "... source/save.o"
 	@echo "... source/save.i"
 	@echo "... source/save.s"

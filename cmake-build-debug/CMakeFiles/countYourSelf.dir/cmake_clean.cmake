@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/countYourSelf.dir/source/save.c.o"
   "CMakeFiles/countYourSelf.dir/source/list.c.o"
   "CMakeFiles/countYourSelf.dir/source/day.c.o"
+  "CMakeFiles/countYourSelf.dir/source/free.c.o"
+  "CMakeFiles/countYourSelf.dir/source/money.c.o"
   "countYourSelf.pdb"
   "countYourSelf"
 )
