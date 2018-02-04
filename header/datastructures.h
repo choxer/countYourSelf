@@ -94,7 +94,7 @@ typedef struct sMoney{
 
 } tMoney;
 
-extern double total;
+extern float total;
 
 
 #endif //UNTITLED1_DATASTRUCTURES_H

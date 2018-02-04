@@ -16,4 +16,9 @@ int listHabits();
 
 int listOneHabit(tHabit *tmpHabit);
 
+
+int listMoney();
+
+int listDayMoney();
+
 #endif //COUNTYOURSELF_LIST_H

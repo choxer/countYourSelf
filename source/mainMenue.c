@@ -13,10 +13,10 @@ int printMainMenue(){
         mainMenueTitel[1] = "show today         ";
         mainMenueTitel[2] = "show current week  ";
         mainMenueTitel[3] = "show current month ";
-        mainMenueTitel[4] = "                   ";
-        mainMenueTitel[5] = "default            ";
+        mainMenueTitel[4] = "money              ";
+        mainMenueTitel[5] = NULL;
         mainMenueTitel[6] = "preferences        ";
-        mainMenueTitel[7] = "                   ";
+        mainMenueTitel[7] = NULL;
         mainMenueTitel[8] = "save               ";
 
     printCounted();
@@ -36,8 +36,11 @@ int stdMenue(char *menuTitle, char **menuPoints, int numberOfPoints){
         printf("%s", menuTitle);
 
         for(int i = 0; i < numberOfPoints; i++){
-            printf("| %2i.", i+1);
-            printf("%s", *(menuPoints + i));
+            printf("| ");
+            if(menuPoints+i){
+                printf("%2i.", i+1);
+                printf("%s", *(menuPoints + i));
+            }
             printf("\n");
         }
         printf("|______     ____________|\n|| ||| WAHL: ");

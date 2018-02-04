@@ -142,3 +142,8 @@ int listHabits(){
 
     return 0;
 }
+
+int listMoney(){
+
+
+}

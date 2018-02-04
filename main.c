@@ -27,7 +27,7 @@ int main() {
 
     // actualTime();
 
-    /*
+
     do {
         choiceMain = printMainMenue();
 
@@ -45,7 +45,7 @@ int main() {
                 // showCurrentMonth();
                 break;
             case 4:
-
+                modMoney();
                 break;
             case 5:
                 // showCurrentMonth();
@@ -64,7 +64,7 @@ int main() {
         }
 
     }while (!loop);
-    */
+
 
     return 0;
 }

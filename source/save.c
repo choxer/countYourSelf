@@ -96,6 +96,21 @@ int save(){
     if( data ){
         fputs( "<anfang>\n", data);
 
+        // date
+
+
+
+        // money
+
+        fputs("<moneyin>", data);
+
+        fputs("</moneyin>", data);
+
+
+        fputs("<moneyout>", data);
+
+        fputs("</moneyout>", data);
+
         // cigaretteCounter
         char Cnr[5];
         snprintf(Cnr, 5, "%d", cigaretteCounter);
