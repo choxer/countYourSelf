@@ -27,6 +27,8 @@ datastructures.h
 /home/rooty/countYourSelf/header/datastructures.h
 
 /home/rooty/countYourSelf/header/tools.h
+datastructures.h
+/home/rooty/countYourSelf/header/datastructures.h
 
 /home/rooty/countYourSelf/main.c
 stdio.h
@@ -125,6 +127,8 @@ stdbool.h
 -
 ../header/datastructures.h
 /home/rooty/countYourSelf/header/datastructures.h
+../header/tools.h
+/home/rooty/countYourSelf/header/tools.h
 
 /home/rooty/countYourSelf/source/showCurrent.c
 stdio.h
@@ -161,4 +165,6 @@ string.h
 -
 ../header/tools.h
 /home/rooty/countYourSelf/header/tools.h
+../header/datastructures.h
+/home/rooty/countYourSelf/header/datastructures.h
 

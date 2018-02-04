@@ -16,12 +16,14 @@ int main() {
 
     load();
 
+    FirstDay = currentYear[0];
     LastDay = currentYear[tDateCounter];
 
-    if(currentYear[0])
-        printf("currentYear[0]: %02d.%02d.%d", currentYear[0]->day, currentYear[0]->month, currentYear[0]->year);
     if(LastDay)
-        printf("LastDay: %02d.%02d.%d", LastDay->day, LastDay->month, LastDay->year);
+        printf("\nLastDay : %02d.%02d.%d", LastDay->day, LastDay->month, LastDay->year);
+
+    if(FirstDay)
+        printf("\nFirstDay: %02d.%02d.%d", FirstDay->day, FirstDay->month, FirstDay->year);
 
 
 

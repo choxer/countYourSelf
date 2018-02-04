@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "../header/tools.h"
+#include "../header/datastructures.h"
 
 int askYesorNo(char strQuestion[])
 {
@@ -172,4 +173,47 @@ int getText(char *prompt, int maxLen, char **Text, int allowEmpty)
         return 1;
     }
     return 0;
+}
+
+int getDateFromString(char *string, tDate *date){
+    char *begin = string;
+    char *pDay = string;
+    char *pMonth = NULL;
+    char *pYear = NULL;
+
+    int day = 0;
+    int month = 0;
+    int year = 0;
+
+    int i = 0;
+    int count = 0;
+
+    while(*(begin+i)){
+        if(*(begin+i) == '.'){
+            if(count == 0){
+                pMonth = (begin+i+1);
+                count++;
+            }
+            else if(count == 1){
+                pYear = (begin+i+1);
+            }
+        }
+        i++;
+    }
+
+    day = atoi(pDay);
+    //printf("%i\n", day);
+
+    month = atoi(pMonth);
+    //printf("%i\n", month);
+
+    year = atoi(pYear);
+    //printf("%i\n", year);
+
+    date->day = day;
+    date->month = month;
+    date->year = year;
+
+    // optional test the Date
+
 }

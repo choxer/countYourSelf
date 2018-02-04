@@ -1,5 +1,5 @@
 <anfang>
-<datecounter>3</datecounter>
+<datecounter>0</datecounter>
 <date>4.2.2018</date>
 <cigarettecounter>0</cigarettecounter>
 <beercounter>0</beercounter>

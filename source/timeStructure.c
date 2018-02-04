@@ -101,30 +101,37 @@ int needNewDay(){
     LastDay = currentYear[tDateCounter];
 
     tDate *temp = calloc( 1, sizeof(tDate));
-    temp = actualTime();
-
-    //currentYear[0] = test;
+    //temp = actualTime();
+    temp->day = 23;
+    temp->month = 12;
+    temp->year = 2018;
 
     printf("Actual Day: %02d.%02d.%d\n", temp->day, temp->month, temp->year);
 
     printf("tDateCounter: %d\n", tDateCounter);
+
+    if(LastDay)
+        printf("\nLastDay : %02d.%02d.%d", LastDay->day, LastDay->month, LastDay->year);
+
+    if(FirstDay)
+        printf("\nFirstDay: %02d.%02d.%d\n", FirstDay->day, FirstDay->month, FirstDay->year);
+
 
     if(!FirstDay)
         printf("TEST 0 ");
 
     if(!LastDay)
         printf("Test1 ");
-        return 1;
+
 
     if( (LastDay->day != temp->day) && (LastDay->month != temp->month)
              && (LastDay->month != temp->month) ) {
-        printf("TEST 1 ");
+        tDate *newDate = calloc( 1, sizeof(tDate));
+        newDay(newDate);
+
+        currentYear[tDateCounter] = newDate;
+        LastDay = newDate;
     }
-
-    tDate *newDate = calloc( 1, sizeof(tDate));
-    newDay(newDate);
-
-    currentYear[tDateCounter] = newDate;
 
     printf("newDate: %02d.%02d.%d\n", currentYear[tDateCounter]->day,
            currentYear[tDateCounter]->month, currentYear[tDateCounter]->year);

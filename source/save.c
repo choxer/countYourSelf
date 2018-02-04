@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "../header/datastructures.h"
+#include "../header/tools.h"
 
 int load(){
     FILE *data = fopen("../database.txt", "rt");
@@ -83,18 +84,22 @@ int load(){
                 }
             }
 
-            // dateCounter
-            if( strncmp(zeile, "<date>", 12) == 0 ){
-                printf("found date\n");
+            // date
+            if( strncmp(zeile, "<date>", 6) == 0 ){
+                printf(">>found date\n");
 
-                size_t len = strlen( zeile + 12 ) - 13;
+                size_t len = strlen( zeile + 6 ) - 7;
                 //printf("%s\n", zeile);
 
-                if ( strncmp( zeile + 12 + len, "</date>", 13) == 0 ){
+                if ( strncmp( zeile + 6 + len, "</date>", 7) == 0 ){
                     char *date = calloc( len + 1, sizeof(char));
-                    strncpy( date, zeile + 12, len);
+                    strncpy( date, zeile + 6, len);
 
-                    printf("%s\n", date);
+                    tDate *nDate = calloc( 1, sizeof(tDate));
+
+                    getDateFromString(date, nDate);
+
+                    currentYear[tDateCounter] = nDate;
 
                     //printf("%s\n", testcounter);
                 }
@@ -138,7 +143,7 @@ int save(){
         fputs("<datecounter>", data);
         fputs(Dnr, data);
         fputs("</datecounter>\n", data);
-        printf("datecounter gespeichert..\n");
+        printf(">> datecounter gespeichert..\n");
 
         char day[5];
         char month[5];
@@ -157,7 +162,7 @@ int save(){
         fputs(year, data);
 
         fputs("</date>\n", data);
-        printf("date gespeichert\n");
+        printf(">> date gespeichert..\n");
 
         // money
 /*
@@ -176,7 +181,7 @@ int save(){
         fputs( "<cigarettecounter>", data);
         fputs( Cnr, data);
         fputs( "</cigarettecounter>\n", data);
-        printf("cigarettecounter gespeichert..\n");
+        printf(">> cigarettecounter gespeichert..\n");
 
         // beerCounter
         char Bnr[5];
@@ -184,7 +189,7 @@ int save(){
         fputs( "<beercounter>", data);
         fputs( Bnr, data);
         fputs( "</beercounter>\n", data);
-        printf("beercounter gespeichert..\n");
+        printf(">> beercounter gespeichert..\n");
 
         // sportsCounter
         char Snr[5];
@@ -192,7 +197,7 @@ int save(){
         fputs( "<sportscounter>", data);
         fputs( Snr, data);
         fputs( "</sportscounter>\n", data);
-        printf("sportscounter gespeichert..\n");
+        printf(">> sportscounter gespeichert..\n");
 
 
         fputs( "<ende>\n", data);
