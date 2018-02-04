@@ -14,7 +14,7 @@ float total = 0;
 
 double showTotal(){
 
-    printf("\n\ntotal: %.2f", total);
+    printf("total: %.2f€\n", total);
 }
 
 int modMoney(){

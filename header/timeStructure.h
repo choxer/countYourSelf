@@ -8,8 +8,13 @@
 #include "datastructures.h"
 
 void hour();
+
+void showDate();
+
 tDate *actualTime();
+
 int needNewDay();
+
 int newDay(tDate *);
 
 #endif //COUNTYOURSELF_TIME_H

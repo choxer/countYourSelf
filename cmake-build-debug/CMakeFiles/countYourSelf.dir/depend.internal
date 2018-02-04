@@ -29,11 +29,16 @@ CMakeFiles/countYourSelf.dir/source/list.c.o
  /home/rooty/countYourSelf/header/tools.h
  /home/rooty/countYourSelf/source/list.c
 CMakeFiles/countYourSelf.dir/source/mainMenue.c.o
+ /home/rooty/countYourSelf/header/datastructures.h
  /home/rooty/countYourSelf/header/mainMenue.h
+ /home/rooty/countYourSelf/header/money.h
+ /home/rooty/countYourSelf/header/timeStructure.h
  /home/rooty/countYourSelf/source/mainMenue.c
 CMakeFiles/countYourSelf.dir/source/money.c.o
  /home/rooty/countYourSelf/header/datastructures.h
+ /home/rooty/countYourSelf/header/mainMenue.h
  /home/rooty/countYourSelf/header/money.h
+ /home/rooty/countYourSelf/header/tools.h
  /home/rooty/countYourSelf/source/money.c
 CMakeFiles/countYourSelf.dir/source/save.c.o
  /home/rooty/countYourSelf/header/datastructures.h

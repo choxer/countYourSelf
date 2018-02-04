@@ -14,14 +14,15 @@ int main() {
     int loop = 0;
     int choiceMain = 0;
 
-    // load();
-    // isNewDay();
+    load();
 
-    needNewDay();
+    LastDay = currentYear[tDateCounter];
 
-    printf("currentYear[0]: %02d.%02d.%d", currentYear[0]->day, currentYear[0]->month, currentYear[0]->year);
+    if(currentYear[0])
+        printf("currentYear[0]: %02d.%02d.%d", currentYear[0]->day, currentYear[0]->month, currentYear[0]->year);
+    if(LastDay)
+        printf("LastDay: %02d.%02d.%d", LastDay->day, LastDay->month, LastDay->year);
 
-    showTotal();
 
 
 
@@ -29,6 +30,7 @@ int main() {
 
 
     do {
+
         choiceMain = printMainMenue();
 
         switch (choiceMain) {
@@ -54,7 +56,7 @@ int main() {
                 // showCurrentMonth();
                 break;
             case 7:
-                // showCurrentMonth();
+                needNewDay();
                 break;
             case 8:
                 save();

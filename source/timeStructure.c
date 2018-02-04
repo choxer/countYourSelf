@@ -13,6 +13,35 @@ tDate *LastDay = NULL;
 
 int tDateCounter = 0;
 
+void showDate(){
+    time_t now;
+    time(&now);
+
+    struct tm *actTime;
+    actTime = localtime(&now);
+
+    //printf("%02d:%02d:%02d Uhr\n", actTime->tm_hour, actTime->tm_min, actTime->tm_sec);
+
+    //printf("Heute ist der %02d.%i.%i\n", actTime->tm_mday, actTime->tm_mon, actTime->tm_year);
+
+    // printf("%d\n", actTime->tm_wday);
+
+    printf("date : ");
+    /*
+     printf("%02d.", actTime->tm_mday);
+     printf("%02d.", actTime->tm_mon+1);
+     printf("%d\n", actTime->tm_year+1900);
+    */
+    if(currentYear[tDateCounter])
+        printf("%02d.%02d.%d\n", currentYear[tDateCounter]->day, currentYear[tDateCounter]->month,
+                            currentYear[tDateCounter]->year);
+    else if (LastDay){
+        printf("%02d.%02d.%d\n", LastDay->day, LastDay->month, LastDay->year);
+    }
+    else
+        printf("\n");
+}
+
 void hour(){
 
     time_t sec;
@@ -69,42 +98,37 @@ tDate *actualTime()
 int needNewDay(){
     // check if last date is actual date
     FirstDay = currentYear[0];
+    LastDay = currentYear[tDateCounter];
 
     tDate *temp = calloc( 1, sizeof(tDate));
     temp = actualTime();
 
-    tDate *test = calloc( 1, sizeof(tDate));
-    test->day = 99;
-    test->month = 12;
-    test->year = 2018;
-
-    currentYear[1] = test;
+    //currentYear[0] = test;
 
     printf("Actual Day: %02d.%02d.%d\n", temp->day, temp->month, temp->year);
-    printf("currentYear[1]: %02d.%02d.%d\n", test->day, test->month, test->year);
-
-    // LastDay = currentYear[tDateCounter];
-
-    LastDay = currentYear[1];
 
     printf("tDateCounter: %d\n", tDateCounter);
 
-    if(FirstDay == LastDay){
-        printf("Nur ein Tag...\n");
-    }
-    if(LastDay == temp){
-        printf("Kein Neuer Tag benötigt");
-        return 0;
-    }
-    if(LastDay != temp){
+    if(!FirstDay)
+        printf("TEST 0 ");
 
-        tDate *newDate = calloc( 1, sizeof(tDate));
-        currentYear[tDateCounter] = newDate;
+    if(!LastDay)
+        printf("Test1 ");
+        return 1;
 
-        newDay(newDate);
-
-        printf("newDate: %02d.%02d.%d\n", newDate->day, newDate->month, newDate->year);
+    if( (LastDay->day != temp->day) && (LastDay->month != temp->month)
+             && (LastDay->month != temp->month) ) {
+        printf("TEST 1 ");
     }
+
+    tDate *newDate = calloc( 1, sizeof(tDate));
+    newDay(newDate);
+
+    currentYear[tDateCounter] = newDate;
+
+    printf("newDate: %02d.%02d.%d\n", currentYear[tDateCounter]->day,
+           currentYear[tDateCounter]->month, currentYear[tDateCounter]->year);
+
 
     free(temp);
 }

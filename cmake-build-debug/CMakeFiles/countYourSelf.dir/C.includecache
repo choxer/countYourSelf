@@ -95,14 +95,24 @@ stdlib.h
 -
 ../header/mainMenue.h
 /home/rooty/countYourSelf/header/mainMenue.h
+../header/timeStructure.h
+/home/rooty/countYourSelf/header/timeStructure.h
+../header/money.h
+/home/rooty/countYourSelf/header/money.h
 
 /home/rooty/countYourSelf/source/money.c
 stdio.h
+-
+stdlib.h
 -
 ../header/datastructures.h
 /home/rooty/countYourSelf/header/datastructures.h
 ../header/money.h
 /home/rooty/countYourSelf/header/money.h
+../header/mainMenue.h
+/home/rooty/countYourSelf/header/mainMenue.h
+../header/tools.h
+/home/rooty/countYourSelf/header/tools.h
 
 /home/rooty/countYourSelf/source/save.c
 stdio.h

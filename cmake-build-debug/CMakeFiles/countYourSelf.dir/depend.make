@@ -28,11 +28,16 @@ CMakeFiles/countYourSelf.dir/source/list.c.o: ../header/list.h
 CMakeFiles/countYourSelf.dir/source/list.c.o: ../header/tools.h
 CMakeFiles/countYourSelf.dir/source/list.c.o: ../source/list.c
 
+CMakeFiles/countYourSelf.dir/source/mainMenue.c.o: ../header/datastructures.h
 CMakeFiles/countYourSelf.dir/source/mainMenue.c.o: ../header/mainMenue.h
+CMakeFiles/countYourSelf.dir/source/mainMenue.c.o: ../header/money.h
+CMakeFiles/countYourSelf.dir/source/mainMenue.c.o: ../header/timeStructure.h
 CMakeFiles/countYourSelf.dir/source/mainMenue.c.o: ../source/mainMenue.c
 
 CMakeFiles/countYourSelf.dir/source/money.c.o: ../header/datastructures.h
+CMakeFiles/countYourSelf.dir/source/money.c.o: ../header/mainMenue.h
 CMakeFiles/countYourSelf.dir/source/money.c.o: ../header/money.h
+CMakeFiles/countYourSelf.dir/source/money.c.o: ../header/tools.h
 CMakeFiles/countYourSelf.dir/source/money.c.o: ../source/money.c
 
 CMakeFiles/countYourSelf.dir/source/save.c.o: ../header/datastructures.h

@@ -1,5 +1,7 @@
 <anfang>
-<cigarettecounter>5</cigarettecounter>
-<beercounter>6</beercounter>
+<datecounter>3</datecounter>
+<date>4.2.2018</date>
+<cigarettecounter>0</cigarettecounter>
+<beercounter>0</beercounter>
 <sportscounter>0</sportscounter>
 <ende>

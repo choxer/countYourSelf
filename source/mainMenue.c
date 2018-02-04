@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../header/mainMenue.h"
+#include "../header/timeStructure.h"
+#include "../header/money.h"
 
 int printMainMenue(){
     int choiceStd;
@@ -16,10 +18,17 @@ int printMainMenue(){
         mainMenueTitel[4] = "money              ";
         mainMenueTitel[5] = NULL;
         mainMenueTitel[6] = "preferences        ";
-        mainMenueTitel[7] = NULL;
+        mainMenueTitel[7] = "date";
         mainMenueTitel[8] = "save               ";
 
     printCounted();
+
+
+    printf("| ");
+    showDate();
+
+    printf("| ");
+    showTotal();
 
     stdMenue("|\n|| m a i n   m e n u e ||\n|                       |\n", mainMenueTitel, 9);
 }
