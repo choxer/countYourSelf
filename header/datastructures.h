@@ -92,9 +92,16 @@ typedef struct sMoney{
 
     tDate *currentDay;
 
+    char *comment;
+
+    struct sMoney *next;
+    struct sMoney *prev;
+
 } tMoney;
 
 extern float total;
 
+extern tMoney *FirstMoney;
+extern tMoney *LastMoney;
 
 #endif //UNTITLED1_DATASTRUCTURES_H

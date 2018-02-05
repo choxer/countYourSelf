@@ -11,14 +11,18 @@ int insertHabitInDVList(tHabit *Neu);
 
 tHabit *removeHabitFromDVList(char *tHabitName);
 
-
 int listHabits();
 
 int listOneHabit(tHabit *tmpHabit);
 
 
+
+int insertMoneyInDVList(tMoney *Neu);
+
+tMoney *removeMoneyFromDVList(char *tMoneyName);
+
 int listMoney();
 
-int listDayMoney();
+int listOneMoney(tMoney *);
 
 #endif //COUNTYOURSELF_LIST_H

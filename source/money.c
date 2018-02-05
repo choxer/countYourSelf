@@ -8,9 +8,11 @@
 #include "../header/money.h"
 #include "../header/mainMenue.h"
 #include "../header/tools.h"
+#include "../header/list.h"
 
 float total = 0;
-
+tMoney *FirstMoney = NULL;
+tMoney *LastMoney = NULL;
 
 double showTotal(){
 
@@ -23,13 +25,16 @@ int modMoney(){
 
     int loop = 0;
 
+    char inputStr[20];
+
     char *menuepoints[3];
     menuepoints[0] = "einnahme";
     menuepoints[1] = "ausgabe";
-    menuepoints[2] = "back";
+    menuepoints[2] = "liste";
+    menuepoints[3] = "back";
 
     do {
-        choice = stdMenue("|| ||| ## G E L D ##    |\n|                       |\n", menuepoints, 3);
+        choice = stdMenue("|| ||| ## G E L D ##    |\n|                       |\n", menuepoints, 4);
 
         printf("|| total: %2.f\n", total);
 
@@ -38,7 +43,16 @@ int modMoney(){
             scanf("%2f", &betrag);
             clearBuffer();
 
+            printf("||      Kommentar (opt): ");
+            fgets(inputStr, 19, stdin);
+
             total += betrag;
+
+            tMoney *nMoney = calloc( 1, sizeof(tMoney));
+            nMoney->amount = betrag;
+            nMoney->comment = inputStr;
+
+            insertMoneyInDVList(nMoney);
 
             printf("||  Einzahlung von %.2f€ bestaetigt..\n", betrag);
             printf("||  total: %.2f€\n", total);
@@ -47,15 +61,26 @@ int modMoney(){
             scanf("%2f", &betrag);
             clearBuffer();
 
+            printf("||      Kommentar (opt): ");
+            fgets(inputStr, 19, stdin);
+
             total -= betrag;
+
+            tMoney *nMoney = calloc( 1, sizeof(tMoney));
+            nMoney->amount = -betrag;
+            nMoney->comment = inputStr;
+
+            insertMoneyInDVList(nMoney);
 
             printf("||  Auszahlung von %.2f€ bestaetigt..\n", betrag);
             printf("||  total: %.2f€\n", total);
         }
-        if(choice == 2){
+        else if(choice == 2){
+            listMoney();
+        }
+        else if(choice == 3){
             return 0;
         }
         printf("\n");
     }while (!loop);
 }
-

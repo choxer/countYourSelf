@@ -9,4 +9,6 @@ double showTotal();
 
 int modMoney();
 
+int list_Money();
+
 #endif //COUNTYOURSELF_MONEY_H
