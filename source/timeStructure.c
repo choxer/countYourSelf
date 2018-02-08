@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include "../header/timeStructure.h"
 #include "../header/datastructures.h"
+#include "../header/list.h"
 
 tDate *FirstDay = NULL;
 tDate *LastDay = NULL;
@@ -102,9 +103,17 @@ int needNewDay(){
 
     tDate *temp = calloc( 1, sizeof(tDate));
     //temp = actualTime();
-    temp->day = 23;
-    temp->month = 12;
-    temp->year = 2018;
+    time_t now;
+    time(&now);
+
+    struct tm *actTime;
+    actTime = localtime(&now);
+
+
+    temp->day   = actTime->tm_mday;
+    temp->month = actTime->tm_mon+1;
+    temp->year  = actTime->tm_year+1900;
+
 
     printf("Actual Day: %02d.%02d.%d\n", temp->day, temp->month, temp->year);
 
@@ -124,14 +133,26 @@ int needNewDay(){
         printf("Test1 ");
 
 
-    if( (LastDay->day != temp->day) && (LastDay->month != temp->month)
-             && (LastDay->month != temp->month) ) {
-        tDate *newDate = calloc( 1, sizeof(tDate));
-        newDay(newDate);
+    if( LastDay->year == temp->year ){
+        if(LastDay->month == temp->month){
+            if(LastDay->day == temp->day){
 
-        currentYear[tDateCounter] = newDate;
-        LastDay = newDate;
+            }
+            else{
+                tDate *newDate = calloc( 1, sizeof(tDate));
+                newDate->last  = LastDay;
+                newDate->first = FirstDay;
+
+                if(!newDay(newDate)){
+                    currentYear[tDateCounter] = newDate;
+                    LastDay = newDate;
+                }
+            }
+        }
     }
+
+    // Lücke zwischen gespeicherten Daten?
+
 
     printf("newDate: %02d.%02d.%d\n", currentYear[tDateCounter]->day,
            currentYear[tDateCounter]->month, currentYear[tDateCounter]->year);
@@ -152,10 +173,17 @@ int newDay(tDate *actDate){
         actDate->month = actTime->tm_mon+1;
         actDate->year  = actTime->tm_year+1900;
 
+        appendInEVList(actDate);
+
         tDateCounter++;
 
         return 0;
     } else{
         return 1;
     }
+}
+
+int date(){
+    needNewDay();
+    listDates();
 }

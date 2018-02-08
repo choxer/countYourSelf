@@ -115,6 +115,8 @@ stdlib.h
 /home/rooty/countYourSelf/header/mainMenue.h
 ../header/tools.h
 /home/rooty/countYourSelf/header/tools.h
+../header/list.h
+/home/rooty/countYourSelf/header/list.h
 
 /home/rooty/countYourSelf/source/save.c
 stdio.h
@@ -155,6 +157,8 @@ stdlib.h
 /home/rooty/countYourSelf/header/timeStructure.h
 ../header/datastructures.h
 /home/rooty/countYourSelf/header/datastructures.h
+../header/list.h
+/home/rooty/countYourSelf/header/list.h
 
 /home/rooty/countYourSelf/source/tools.c
 stdio.h

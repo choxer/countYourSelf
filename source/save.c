@@ -136,8 +136,11 @@ int save(){
 
     if( data ){
         fputs( "<anfang>\n", data);
-
+        int i = 0;
         // date
+        tDate *tmp = calloc( 1, sizeof(tDate));
+        tmp = currentYear[i];
+
         char Dnr[5];
         snprintf(Dnr, 5, "%d", tDateCounter);
         fputs("<datecounter>", data);
@@ -145,26 +148,29 @@ int save(){
         fputs("</datecounter>\n", data);
         printf(">> datecounter gespeichert..\n");
 
-        char day[5];
-        char month[5];
-        char year[5];
-        snprintf(day, 5, "%d", currentYear[tDateCounter]->day);
-        snprintf(month, 5, "%d", currentYear[tDateCounter]->month);
-        snprintf(year, 5, "%d", currentYear[tDateCounter]->year);
-        fputs("<date>", data);
+        while( (currentYear[i]) ){
 
-        fputs(day, data);
-        fputs(".", data);
+            char day[5];
+            char month[5];
+            char year[5];
+            snprintf(day, 5, "%d", currentYear[i]->day);
+            snprintf(month, 5, "%d", currentYear[i]->month);
+            snprintf(year, 5, "%d", currentYear[i]->year);
+            fputs("<date>", data);
 
-        fputs(month, data);
-        fputs(".", data);
 
-        fputs(year, data);
+            fputs(day, data);
+            fputs(".", data);
 
-        fputs("</date>\n", data);
-        printf(">> date gespeichert..\n");
+            fputs(month, data);
+            fputs(".", data);
 
-        // money
+            fputs(year, data);
+
+            fputs("</date>\n", data);
+            printf(">> date gespeichert..\n");
+
+            // money
 /*
         fputs("<moneyin>", data);
 
@@ -175,29 +181,35 @@ int save(){
 
         fputs("</moneyout>", data);
 */
-        // cigaretteCounter
-        char Cnr[5];
-        snprintf(Cnr, 5, "%d", cigaretteCounter);
-        fputs( "<cigarettecounter>", data);
-        fputs( Cnr, data);
-        fputs( "</cigarettecounter>\n", data);
-        printf(">> cigarettecounter gespeichert..\n");
+            // cigaretteCounter
+            char Cnr[5];
+            snprintf(Cnr, 5, "%d", cigaretteCounter);
+            fputs( "<cigarettecounter>", data);
+            fputs( Cnr, data);
+            fputs( "</cigarettecounter>\n", data);
+            printf(">> cigarettecounter gespeichert..\n");
 
-        // beerCounter
-        char Bnr[5];
-        snprintf(Bnr, 5, "%d", beerCounter);
-        fputs( "<beercounter>", data);
-        fputs( Bnr, data);
-        fputs( "</beercounter>\n", data);
-        printf(">> beercounter gespeichert..\n");
+            // beerCounter
+            char Bnr[5];
+            snprintf(Bnr, 5, "%d", beerCounter);
+            fputs( "<beercounter>", data);
+            fputs( Bnr, data);
+            fputs( "</beercounter>\n", data);
+            printf(">> beercounter gespeichert..\n");
 
-        // sportsCounter
-        char Snr[5];
-        snprintf(Snr, 5, "%d", sportsCounter);
-        fputs( "<sportscounter>", data);
-        fputs( Snr, data);
-        fputs( "</sportscounter>\n", data);
-        printf(">> sportscounter gespeichert..\n");
+            // sportsCounter
+            char Snr[5];
+            snprintf(Snr, 5, "%d", sportsCounter);
+            fputs( "<sportscounter>", data);
+            fputs( Snr, data);
+            fputs( "</sportscounter>\n", data);
+            printf(">> sportscounter gespeichert..\n");
+
+
+            tmp = tmp->next;
+            i++;
+        }
+
 
 
         fputs( "<ende>\n", data);

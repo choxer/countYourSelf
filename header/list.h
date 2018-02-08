@@ -25,4 +25,8 @@ int listMoney();
 
 int listOneMoney(tMoney *);
 
+int listDates();
+
+int appendInEVList(tDate *today);
+int removefromEVList(tDate *today);
 #endif //COUNTYOURSELF_LIST_H

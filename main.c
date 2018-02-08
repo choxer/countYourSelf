@@ -58,7 +58,7 @@ int main() {
                 // showCurrentMonth();
                 break;
             case 7:
-                needNewDay();
+                date();
                 break;
             case 8:
                 save();

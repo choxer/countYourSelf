@@ -17,4 +17,5 @@ int needNewDay();
 
 int newDay(tDate *);
 
+int date();
 #endif //COUNTYOURSELF_TIME_H

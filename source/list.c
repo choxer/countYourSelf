@@ -276,3 +276,79 @@ int listMoney(){
 
     return 0;
 }
+
+int listDates(){
+    tDate *temp = calloc( 1, sizeof(tDate));
+    temp = FirstDay;
+    int i = 0;
+
+    while(temp){
+        printf("%i - %02d.%02d.%4d\n", i, temp->day, temp->month, temp->year);
+        i++;
+        temp = temp->next;
+    }
+
+    free(temp);
+}
+
+int appendInEVList(tDate *today){
+    tDate *new = calloc( 1, sizeof(tDate));
+
+    if(new){
+        new->day   = today->day;
+        new->month = today->month;
+        new->year  = today->year;
+        new->next  = NULL;
+
+        if(FirstDay == NULL){
+            new->first = new->last = new;
+            return 1;
+        }
+        today->last = today->last->next = new;
+        return 1;
+    }
+    else
+        return 0;
+}
+
+/*
+int removefromEVList( *Index, TPlayer *Del)
+{
+    TListElement *tmp = Index->first;
+    TListElement *akt;
+    if (!tmp)
+        return 0;
+    if (!strcmp(tmp->ptrPlayer->playerName, Del->playerName))
+    {
+        if (!tmp->next)
+        {
+            Index->first = Index->last = NULL;
+            free(tmp);
+            return 1;
+        }
+        Index->first = tmp->next;
+        free(tmp);
+        return 1;
+    }
+    if (!tmp->next)
+        return 0;
+    while (strcmp((tmp->next->ptrPlayer->playerName), (Del->playerName)) == 0)
+    {
+        tmp = tmp->next;
+        if (!tmp->next)
+            return 0;
+    }
+    if(!strcmp(Index->last->ptrPlayer->playerName, Del->playerName))
+    {
+        Index->last = tmp;
+        akt = tmp->next;
+        tmp->next = NULL;
+        free(akt);
+        return 1;
+    }
+    akt = tmp->next->next;
+    free(tmp->next);
+    tmp->next = akt;
+    return 1;
+}
+*/

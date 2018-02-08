@@ -48,6 +48,10 @@ typedef struct sDate{
     tHabit *sports;
     tHabit *gewicht;
 
+
+    struct sDate *next;
+    struct sDate *first;
+    struct sDate *last;
     // GEWICHT
     // double gewicht;
 
